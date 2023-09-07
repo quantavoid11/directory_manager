@@ -1,8 +1,8 @@
 {
-  "name": "directory_manager",
+  "name": "@quantavoid11/directory_manager",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "bin":{
     "dirmanager":"./dist/index.js"
   },
@@ -10,9 +10,14 @@
     "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "npmtool"
+  ],
+  "author": "Siddhant Kumar keshri",
   "license": "ISC",
+  "repository": "https://github.com/quantavoid11/directory_manager",
+  "homepage": "https://github.com/quantavoid11/directory_manager#readme",
   "dependencies": {
     "commander": "^11.0.0",
     "figlet": "^1.6.0"
