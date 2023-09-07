@@ -60,13 +60,13 @@ if (!process.argv.slice(2).length) {
 }
 ;
 if (options.ls) {
-    const filepath = typeof options.ls === "string" ? options.ls : __dirname;
+    const filepath = typeof options.ls === "string" ? options.ls : process.cwd();
     listDirContents(filepath);
 }
 if (options.mkdir) {
-    createDir(path.resolve(__dirname, options.mkdir));
+    createDir(path.resolve(process.cwd(), options.mkdir));
 }
 if (options.touch) {
-    createFile(path.resolve(__dirname, options.touch));
+    createFile(path.resolve(process.cwd(), options.touch));
 }
 //# sourceMappingURL=index.js.map
