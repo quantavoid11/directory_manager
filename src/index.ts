@@ -51,6 +51,7 @@ function createFile(filepath:string){
     fs.openSync(filepath,"w");
     console.log(`File ${filepath} has been created successfully`);
 }
+
 if(!process.argv.slice(2).length){
     program.outputHelp();
 };
